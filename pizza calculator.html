@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h2> Pizza Calculator </h2>
+
+	<script type="text/javascript">
+
+
+
+		window.alert("bestel hier uw pizzas stap voor stap");
+		
+		const small = 9; //de prijs voor de kleine pizza
+		const medium = 11; //de prijs voor de medium pizza
+		const large = 13; //de prijs voor de grote pizza
+
+
+
+		
+
+		var smallpizza = prompt("hoeveel kleine pizzas wilt u", "voer hier in" ); //maakt een pop up voor de kleine pizza
+		var mediumpizza = prompt("hoeveel medium pizzas wilt u", "voer hier in"); //maakt een pop up voor de medium pizza
+		var largepizza = prompt("hoeveel large pizzas wilt u", "voer hier in");  //maakt een pop up voor de grote pizza
+  
+
+
+		document.write("small pizzas:"+smallpizza+"<br>"); //laat zien hoeveel kleine pizzas zijn besteld
+		document.write("medium pizzas:"+mediumpizza+"<br>"); //laat zien hoeveel medium pizzas zijn besteld
+		document.write("large pizzas:"+largepizza+"<br>"); //laat zien hoeveel grote pizzas zijn besteld
+
+
+		var eindprijs = (small*smallpizza + medium*mediumpizza + large*largepizza); //formule om de totaalprijs te berekenen
+
+		document.write("uw totaalprijs is:"+eindprijs+"euro"); //laat de totaalprijs op het scherm zien
+
+		
+
+		document.getElementById("demo").innerHTML = "";
+	</script>
+</head>
+<body>
+
+</body>
+</html>
